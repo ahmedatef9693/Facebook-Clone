@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 
-.grid-parent{
+.grid-parent-navbar{
     display: grid;
     grid-template-columns: auto repeat(11,1fr);
     column-gap:12px ;
@@ -68,13 +68,16 @@ img[title="home"]{
 img[title="friends"],
 img[title="watch"],
 img[title="marketplace"],
-img[title="groups"],
-img[title="menu"],
-img[title="messanger"],
-img[title="notification"]
+img[title="groups"]
 {
     width: 30px;
     height: 30px;
+}
+img[title="menu"],
+img[title="messanger"],
+img[title="notification"]{
+    width: 25px;
+    height: 25px;
 }
 
 .friends{
@@ -138,5 +141,6 @@ img[title="profile-pic"]{
     justify-content: start;
     align-items: center;
     grid-column: 13;
+    
 
 }
