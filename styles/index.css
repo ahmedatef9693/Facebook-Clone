@@ -22,19 +22,24 @@ ul{
     list-style: none;
 }
 
+
 .facebook-logo{
+    grid-column: 1;
+    grid-row: 1;
+}
+img[title="facebook-logo"]{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-left: 5px;
-    grid-column: 1;
-    grid-row: 1;
+}
 
 
+.search-input{
+    grid-column: 2 / 4;  
 }
 input[type="search"]{
     background-color: #2D3032;
-    width: 220px;
     height: 40px;
     border-radius: 50px;
     border: none;
@@ -45,8 +50,93 @@ input[type="search"]{
     padding-left: 40px;
     outline: none;
     color: white;
-    grid-column: 5;
-    grid-row: span 2;
-    
+    grid-column: 2 span 2;  
+    width: fit-content; 
 }
 
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5;
+}
+img[title="home"]{
+    width: 25px;
+    height: 25px;
+}
+img[title="friends"],
+img[title="watch"],
+img[title="marketplace"],
+img[title="groups"],
+img[title="menu"],
+img[title="messanger"],
+img[title="notification"]
+{
+    width: 30px;
+    height: 30px;
+}
+
+.friends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 6;
+}
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 7;
+}
+
+.marketplace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 8;
+}
+.groups{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 9;
+
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 10;
+
+}
+.messanger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 11;
+    
+
+}
+.notifications{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-column: 12;
+}
+
+img[title="profile-pic"]{
+    
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.profile-pic{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-column: 13;
+
+}
