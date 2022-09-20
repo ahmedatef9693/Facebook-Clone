@@ -1,0 +1,109 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.flex-parent-sidebar{
+
+    display: inline-flex;
+    flex-direction: column;
+    
+
+}
+
+img[title="profile-pic-sidebar"]{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+
+label[title="profile-name"]{
+    font-weight: bold;
+    color:#A7A29F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+.flex-parent-sidebar div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.row1{
+    margin-top: 50px;
+}
+.flex-parent-sidebar div:not(.row1){
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+div:not(.row1) > label{
+    
+    margin-left: 10px;
+    font-weight: bold;
+    color: #A7A29F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+.see-more{
+    position: relative;
+    text-transform: capitalize;
+    width: fit-content;
+    color: #A7A29F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;  
+    left: 45px;
+    top: 4px;
+}
+
+.see-more::before{
+    position: absolute;
+    content: '^';
+    color: #A7A29F;
+    font-weight: bold;
+     
+    left: -35px;
+    top: 1px;
+    transform:  scaleX(1.1) rotateX(180deg);
+}
+.see-more::after{
+    content: '';
+    position: absolute;
+    background-color: #A7A29F;
+    font-weight: bold; 
+    width: 250px;
+    height: 1px;
+    left: -40px;
+    top: 40px;
+
+}
+p{
+    color: #A7A29F;
+    margin-left: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.group > img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+
+
+
