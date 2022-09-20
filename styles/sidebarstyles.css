@@ -9,8 +9,20 @@
 
     display: inline-flex;
     flex-direction: column;
+    position: fixed;
+    z-index: 1;
     
 
+}
+.flex-parent-sidebar div{
+    transition: 0.1s;
+}
+.flex-parent-sidebar div:hover{
+    background-color: #141516;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 img[title="profile-pic-sidebar"]{
