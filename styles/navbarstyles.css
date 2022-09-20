@@ -30,11 +30,10 @@ ul{
    
 }
 
-ul li{
+li{
     
     transition: 1s;
 }
-ul 
 .home:hover,
 .friends:hover,
 .watch:hover,
@@ -174,9 +173,9 @@ img[title="profile-pic"]{
     justify-content: start;
     align-items: center;
     grid-column: 12;
-    
-
 }
-
+.profile-pic:hover{
+    opacity: 0.7;
+}
 
 
