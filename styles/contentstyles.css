@@ -1,278 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/facebook_favicon.ico">
+    <link rel="stylesheet" href="styles/navbarstyles.css">
+    <link rel="stylesheet" href="styles/sidebarstyles.css">
+    <link rel="stylesheet" href="styles/contentstyles.css">
+    <title>Facebook</title>
+</head>
+<body>
+
+    <ul class="grid-parent-navbar">
+        <li class="facebook-logo">
+            <img title="facebook-logo" src="icons/navbar_icons/facebook_favicon.ico" alt="facebook-image-not available">
+        </li>
+        
+        <li class="search-input">
+            <input type="search" placeholder="Search Facebook">
+        </li>
+        
+        <li class="home">
+            <a href="">
+                <img title="home" src="icons/navbar_icons/home.png" alt="">
+            </a>
+        </li>
+
+        <li class="friends">
+            <a href="">
+                <img title="friends" src="icons/navbar_icons/friends.png" alt="">
+            </a>
+        </li>
+        
+        <li class="watch">
+            <a href="">
+                <img title="watch" src="icons/navbar_icons/film.png" alt="">
+            </a>
+        </li>
+        
+        <li class="marketplace">
+            <a href="">
+                <img title="marketplace" src="icons/navbar_icons/marketplace.png" alt="">
+            </a>
+        </li>
+
+        <li class="groups">
+            <a href="">
+                <img title="groups" src="icons/navbar_icons/user-group.png" alt="">
+            </a>
+        </li>
+
+        <li class="menu">
+            <a href="">
+                <img title="menu" src="icons/navbar_icons/dots-menu.png" alt="">
+            </a>
+        </li>
+        
+        <li class="messanger">
+            <a href="">
+                <img  title="messanger" src="icons/navbar_icons/messenger.png" alt="">
+            </a>
+        </li>
 
 
-*{
-    box-sizing: border-box;
-}
+        <li class="notifications">
+            <a href="">
+                <img title="notification" src="icons/navbar_icons/bell.png" alt="">
+            </a>
+        </li>
 
-.grid-parent-content{
-    display: inline-grid;
-    position: absolute;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(1,1fr) repeat(1,130px);
-    row-gap: 50px;
-    margin-left: 60px;
+
+        <li class="profile-pic">
+            <a href="">
+                <img title="profile-pic" src="icons/navbar_icons/profile-pic.jpeg" alt="">
+            </a>
+        </li>
+
+    </ul>
+
+    <br>
+
+    <div class="flex-parent-sidebar">
+        
+        <div class="row1">
+            <img title="profile-pic-sidebar" src="icons/navbar_icons/profile-pic.jpeg" alt="no-profile-image">
+            <label title="profile-name">ahmed atef</label>
+        </div>
+
+        <div>
+            <img title="friends-sidebar" src="icons/sidebar_images/friends.png" alt="no-fiends-image">
+            <label>friends</label>
+        </div>
+        
+        <div>
+            <img title="friends-sidebar" src="icons/sidebar_images/groups.png" alt="no-groups-image">
+            <label>groups</label>
+        </div>
+
+        <div>
+            <img title="friends-sidebar" src="icons/sidebar_images/marketplacepng.png" alt="no-marketplace-image">
+            <label>marketplace</label>
+        </div>
+
+        <div>
+            <img title="friends-sidebar" src="icons/sidebar_images/watch.png" alt="no-watch-image">
+            <label>watch</label>
+        </div>
+
+        <div>
+            <img title="friends-sidebar" src="icons/sidebar_images/memories.png" alt="no-memories-image">
+            <label>memories</label>
+        </div>
+        
+        <div class="see-more">
+            see more
+        </div>
+        <br>
+
+        <p>your shortcuts</p>
+
+
+        <div class="group">
+            <img src="images/group1.jpg" alt="no-memories-image">
+            <label>group 1</label>
+        </div>
+
+        <div class="group">
+            <img src="images/group2.jpg" alt="no-memories-image">
+            <label>group 2</label>
+        </div>
+
+        <div class="group">
+            <img src="images/group3.jpg" alt="no-memories-image">
+            <label>group 3</label>
+        </div>
+        
+        <div class="group">
+            <img src="images/group4.jpg" alt="no-memories-image">
+            <label>group 4</label>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="grid-parent-content">
+            
+        <div class="stories-reels-rooms">
+            
+            <div class="stories-reels-rooms-links">
+                <div class="stories">stories</div>
+                <div class="reels">reels</div>
+                <div class="rooms">rooms</div>
+
+            </div>
+
+            
+            <div class="add-story-div">
+                <img class="add-story-image" src="icons/navbar_icons/profile-pic.jpeg" alt="">
+                <p class="add-story-paragraph">create story</p>
+                
+            </div>
+
+            <div class="status">
+                <img src="images/status1.PNG" alt="">
+                <p class="friend">friend1</p>
+            </div>
+            
+            <div class="status2">
+                <img src="images/status2.PNG" alt="">
+                <p class="friend">friend2</p>
+            </div>
+            
+            <div class="status3">
+                <img src="images/status3.png" alt="">
+                <p class="friend">friend3</p>
+            </div>
+
+        </div>
+
+        <div class="create-post">
+            <div class="flex1">
+                <img class="profile-pic-post" src="icons/navbar_icons/profile-pic.jpeg" alt="no-profile-image" width="35px" height="35px">
+                <span class="write-post" data-placeholder="hello"></span>
+            </div>
+
+            <hr class="create-post-separator">
+            
+            <div class="flex2">
+                <div class="live-video">
+                    <label for="">Live video</label>
+                </div>
+                
+                <div class="photo-video">
+                    <label for="">Photo/video</label>
+                </div>
+                
+                <div class="feeling-activity">
+                    <label for="">Feeling/activity</label>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="dropdown-flex">
+                <div class="post-profile-pic-div">
+                    <img class="post-profile-pic" src="images/avatar1.ico" alt="friend-image" width="35px" height="35px";>
+                    <div class="profile-details">
+                        <div class="card-photo">
+                            <img src="images/avatar1.ico" alt="">  
+                        </div>
+                        <div class="used-font">friend1</div>
+
+                        <div class="working-place">
+                            <img src="images/profile-details/work.png" alt="" width="35px" height="35px">
+                            <span class="used-font">Frontend Developer at Facebook</span>
+                        </div>
+                        <div class="education-place">
+                            <img src="images/profile-details/education.png" alt="" width="35px" height="35px">
+                            <span class="used-font">Computer Science Ainshams University</span>
+                        </div>
+                        <div class="living-place">
+                            <img src="images/profile-details/home.png" alt="" width="35px" height="35px">
+                            <span class="used-font">in Cairo</span>
+                        </div>
+
+                        <div class="buttons-flex">
+                            <button class="add-friend used-font"> add friend</button>
+                            <button class="message used-font">message</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="person-post-name-date">
+                    <span class="friend-name-post">
+                        friend1
+                    </span>
+                    <span class="post-date">
+                        May 13 at 5:00 PM
+                        <div class="post-date-details">Monday, May 13,2022 at 5:00 AM</div>                    
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- <div class="post-options">
+
+            </div> -->
+
+        </div>
+
+        <div class="post2">
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  
+
+            
+            
+        
+
+
+
+
     
-}
-
-.stories-reels-rooms{
-    margin-top: 70px;
-    background-color: #1D1E1F;
-    grid-column: 4 / 10;
-    border-radius: 10px;
-    width: 600px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    position: relative;
-    overflow: hidden;
-   
-    
-
-}
-.stories-reels-rooms div{
-    transition: 0.1s;
-    cursor: pointer;
-
-} 
-
-.add-story-div:hover,.status:hover,.status2:hover,.status3:hover{
-    transform: scale(1.01);
-    opacity: 0.6;
-}
-
-.stories-reels-rooms-links{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    align-self: flex-start;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    
-}
-.stories-reels-rooms-links div{
-    color: #D4D1CB;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: capitalize;
-    width: 25%;
-    text-align: center;
-    position: relative;
-    
-    cursor: pointer;
-
-}
-.stories-reels-rooms-links div::before{
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    opacity: 0.5;
-    width: 100%;
-    height: 3px;
-    bottom: -20px;
-    left: 0;
-    transition: 0.5s;
-    
-}
-.stories-reels-rooms-links div:hover::before{
-    background-color: #0040FF;
-
-}
-
-
-.stories-reels-rooms img{
-    width: 112.500px;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: cover;
-    
-}
-.add-story-div{
-    position: relative;
-    
-}
-.add-story-div::before{
-    content: '';
-    position: absolute;
-    background-image: url(../icons/content-icons/add.png);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,70%);
-    border: 5px solid #1D1E1F;
-    border-radius: 100%;
-}
-
-
-
-.status{
-    position: relative;
-    opacity: 0.8;    
-}
-.status::before{
-    content: '';
-    opacity: 1;
-    background-image: url(../images/avatar1.ico);
-    background-size: 45px 45px;
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    position: absolute  ;
-    top: 10px;
-    left: 10px;
-    border: 3px solid #0040FF;
-    border-radius: 50%;
-    
-}
-.status2{
-    position: relative;
-    opacity: 0.8;    
-}
-.status2::before{
-    content: '';
-    opacity: 1;
-    background-image: url(../images/avatar2.ico);
-    background-size: 45px 45px;
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    position: absolute  ;
-    top: 10px;
-    left: 10px;
-    border: 3px solid #0040FF;
-    border-radius: 50%;
-    
-}
-.status3{
-    position: relative;
-    opacity: 0.8;    
-}
-.status3::before{
-    content: '';
-    opacity: 1;
-    background-image: url(../images/avatar3.ico);
-    background-size: 45px 45px;
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    position: absolute  ;
-    top: 10px;
-    left: 10px;
-    border: 3px solid #0040FF;
-    border-radius: 50%;
-    
-}
-
-
-.friend , .add-story-paragraph{
-
-    position: absolute;
-    font-weight: bold;
-    color: #D4D1CB;
-    left: -10px;
-    top: 150px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.create-post{
-    grid-row: 2 / 3;
-    grid-column: 4 / 10;
-    background-color: #1D1E1F;
-    border-radius: 10px;
-    
-}
-
-.profile-pic-post{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
-    grid-row: 2;
-    grid-column: 1;
-    margin: 10px;
-    cursor: pointer;
-
-}
-
-.flex1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-}
-.write-post{
-    width: 85%;
-    height: 40px;
-    background-color: #2B2E30;
-    display: inline-block;
-    border-radius: 50px;
-    position: relative;
-}
-.write-post::before{
-    position: absolute;
-    content: "What's on your mind , Ahmed?";
-    top: 50%;
-    left: 15px;
-    color: #D4D1CB;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.create-post-separator{
-    width:87%; 
-    border-color: #d4cbcb;
-    opacity: 0.1;
-}
-
-.flex2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.live-video,.photo-video,.feeling-activity{
-    position: relative;
-    transition: 1s;
-    cursor: pointer;
-}
-.live-video:hover,.photo-video:hover,.feeling-activity:hover{
-    transform: scale(1.1);
-    opacity: 0.8;
-    
-}
-.live-video::after{
-    content: '';
-    position: absolute;
-    background-image: url(../icons/content-icons/video.png);
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-    left: -20px;
-}
-.photo-video::after{
-    content: '';
-    position: absolute;
-    background-image: url(../icons/content-icons/photo.png);
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-    left: -20px;
-}
-.feeling-activity::after{
-    content: '';
-    position: absolute;
-    background-image: url(../icons/content-icons/feeling.png);
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-    left: -20px;
-}
+</body>
+</html>
