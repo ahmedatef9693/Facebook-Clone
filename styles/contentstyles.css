@@ -24,7 +24,7 @@
     background-color: #1D1E1F;
     grid-column: 4 / 10;
     border-radius: 10px;
-    width: 600px;
+    width: 640px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -291,8 +291,21 @@
     grid-column: 4 / 10;
     background-color: #1D1E1F;
     border-radius: 10px;
+    position: relative;
     
 }
+
+/* .post::after{
+    content: '';
+    position: absolute;
+    bottom: 105px;
+    left: 30px;
+    background-image: url(../images/post-reactions/love.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+} */
+
 .post-options{
     display: flex;
     justify-content: center;
@@ -304,7 +317,11 @@
     cursor: pointer;
     
 }
+.post-options:hover{
+    opacity: 0.9;
+}
 .post-options-dropdown{
+    
     position: absolute;
     background-color: #131415;
     border-radius: 10px;
@@ -332,7 +349,7 @@
     flex-direction: column;
     font-size: large;
     justify-content: center;
-    /*  */
+
     
 
 }
@@ -393,15 +410,11 @@
     position: absolute;
     width: 500px;
     height: 360px;
-  
-    /* transition: 1s;
-    transition-delay: 1s; */
     margin-left: 10px;
     border-radius: 10px;
     transition-duration: 1s;
     background-color: #131415;
     border-radius: 10px;
-    /* display: none; */
     left: 0px;
     top: 100%;
     display: none;
@@ -516,27 +529,98 @@
 .post-pic{
     display: flex;
     flex-direction: column;
-
     width: 100%;
     height: calc(100% - 200px);
     align-content: center;
     background-color: transparent;
-    margin-top: 30px;
+    margin-top: 5px;
     
+}
+.post-pic p{
+    color: #D4D1CB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
 }
 .post-pic img{
     width: 100%;
     height: 100%;
     
+}
+
+
+/* Reaction count for the post */
+
+.reactions-symbols-and-count{
+    width: calc(100% - 60px);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
     
-    
+}
+.reaction-symbol span{
+    position: absolute;
+    top: 8px;
+    left: 87px;
+
+}
+.share-count{
+    margin-left: 10px;
 }
 
 
 
+.reactions-div{
+    margin-top: -30px;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
 
+.reactions-div div{
+    color: #A7A29F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+.reactions-div div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
+.reactions-div span{
+    margin-left: 10px;
+}
 
+.reactions-div::before{
+    content: '';
+    position: absolute;
+    width: calc(100% - 60px);
+    height: 1px;
+    top: 35px;
+    background-color: #A7A29F;
+    
+}
+.reactions-div::after{
+    content: '';
+    position: absolute;
+    width: calc(100% - 60px);
+    height: 1px;
+    bottom: 35px;
+    background-color: #A7A29F;
+    
+}
 
 
 
@@ -547,5 +631,4 @@
     border-radius: 10px;
 
 } 
-
 
