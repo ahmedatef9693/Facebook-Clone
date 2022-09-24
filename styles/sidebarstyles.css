@@ -16,7 +16,15 @@
 }
 .flex-parent-sidebar div{
     transition: 0.1s;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
+.flex-parent-sidebar label{
+    cursor: inherit;
+}
+
 .flex-parent-sidebar div:hover{
     background-color: #141516;
     width: 100%;
@@ -40,12 +48,7 @@ label[title="profile-name"]{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
 }
-.flex-parent-sidebar div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
 
-}
 .row1{
     margin-top: 50px;
 }
@@ -114,7 +117,6 @@ p{
     border-radius: 50%;
     margin: 5px;
 }
-
 
 
 
