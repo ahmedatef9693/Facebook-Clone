@@ -562,10 +562,14 @@
     position: relative;
     
 }
+.reactions-symbols-and-count img{
+    margin-right: -7px;
+    margin-top: 7px;
+}
 .reaction-symbol span{
     position: absolute;
-    top: 8px;
-    left: 87px;
+    top: 10px;
+    left: 60px;
 
 }
 .share-count{
@@ -585,11 +589,8 @@
 }
 
 .reactions-div div{
-    color: #A7A29F;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     text-transform: capitalize;
-    font-size: large;
-    font-weight: bold;
     display: flex;
     align-items: center;
     transition: 1s;
@@ -621,6 +622,11 @@
     background-color: #A7A29F;
     
 }
+
+
+
+
+
 
 
 
