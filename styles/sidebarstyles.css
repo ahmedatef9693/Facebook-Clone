@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+.sidebar-font{
+    font-weight: bold;
+    color: #A7A29F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+.center-v-h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-parent-sidebar{
 
     display: inline-flex;
@@ -120,4 +132,62 @@ p{
 
 
 
+.right-sidebar{
+    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    right: 3px; 
+    z-index: 1;
+    background-color: rebeccapurple;
+}
+
+
+
+
+
+
+/* new code is here */
+.friend-list-option-icons{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 50%;
+}
+.friend-list-option-icons div:not(.option-image-dropdown){
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-image-dropdown{
+    height: 100%;
+
+}
+
+
+
+.friend-list-tag-icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+
+
+
+
+
+.friend-list-tag-icon{
+     /* 50 margin for top + 18 for position */
+    margin-top: 68px;
+}
+
+
+.friend-name{
+    font-size: 15px;
+}
 
