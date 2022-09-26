@@ -151,8 +151,8 @@ p{
     display: flex;
     justify-content: space-evenly;
     height: 30px;
-    width: 50%;
-    margin-right: -10px;
+    /* width: 50%; */
+    margin-right: -70px;
     color: #010101;
     position: relative;
 }
@@ -166,9 +166,6 @@ p{
     margin-left: -50px;
     width:80px;
     height:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     border-radius: 5px;
     cursor: initial;
 
@@ -179,6 +176,8 @@ p{
 .friendlist-dropdown-list p{
     margin: 5px;
 }
+
+
 
 .option-item:hover + .friendlist-dropdown-list{
     cursor: initial;
@@ -213,6 +212,29 @@ p{
     font-size: 20px;
 }
 
+.options-dropdown-friendlist{
+    display: none;
+    opacity: 0;
+    height: 30px;
+    width: 50%;
+    font-size: small;
+    margin-right: 30px;
+    /* margin-right: -10px; */
+    background-color: #1d1e1f;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    right: 30px;
+    
+
+}
+.option-image-dropdown:hover + .options-dropdown-friendlist{
+    opacity: 1;
+
+
+
+}
+
 .friend-list-tag-icon{
     display: flex;
     justify-content: space-between;
@@ -234,7 +256,10 @@ p{
 
 }
 
-
+.friend-name:hover{
+    background-color: #141516;
+    cursor: pointer;
+}
 
 
 
