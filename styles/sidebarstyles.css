@@ -138,12 +138,10 @@ p{
     display: flex;
     flex-direction: column;
     width: 300px;
-    right: 3px; 
-    z-index: 1;
-    background-color: rebeccapurple;
+    right: 0px; 
+    z-index: 0;
+    background-color: transparent;
 }
-
-
 
 
 
@@ -154,7 +152,53 @@ p{
     justify-content: space-evenly;
     height: 30px;
     width: 50%;
+    margin-right: -10px;
+    color: #010101;
+    position: relative;
 }
+
+.friendlist-dropdown-list{
+    opacity: 0;
+    background-color: #1d1e1f;
+    font-size: small;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-left: -50px;
+    width:80px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+    cursor: initial;
+
+}
+.friendlist-dropdown-list:hover {
+    cursor: initial;
+}
+.friendlist-dropdown-list p{
+    margin: 5px;
+}
+
+.option-item:hover + .friendlist-dropdown-list{
+    cursor: initial;
+    opacity: 1;
+}
+
+
+.friend-list-option-icons div{
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.friend-list-option-icons div:hover{
+    
+    transform: scale(1.2);
+
+}
+
+
 .friend-list-option-icons div:not(.option-image-dropdown){
     height: 100%;
     display: flex;
@@ -164,30 +208,33 @@ p{
 
 .option-image-dropdown{
     height: 100%;
-
+    position: relative;
+    margin-top: -7px;
+    font-size: 20px;
 }
-
-
 
 .friend-list-tag-icon{
     display: flex;
     justify-content: space-between;
     margin: 15px;
-
-}
-
-
-
-
-
-
-.friend-list-tag-icon{
-     /* 50 margin for top + 18 for position */
+    /* 50 margin for top + 18 for position */
     margin-top: 68px;
+
 }
+
+
 
 
 .friend-name{
     font-size: 15px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
 }
+
+
+
+
 
