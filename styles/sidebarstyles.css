@@ -23,8 +23,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 1;
-    
-
+    /* background-color: #131415; */
 }
 .flex-parent-sidebar div{
     transition: 0.1s;
