@@ -136,14 +136,19 @@ img[title="notification"]{
     
 
 }
+.create{
+    display:none;
+}
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 9;
-
-
 }
+.menu-phone-image{
+    display: none;
+}
+
 .messanger{
     display: flex;
     justify-content: start;
