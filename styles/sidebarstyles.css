@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+.sidebar-font {
+  font-weight: bold;
+  color: #a7a29f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+.center-v-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-parent-sidebar {
+  display: inline-flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  /* background-color: #131415; */
+}
+.flex-parent-sidebar div {
+  transition: 0.1s;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.flex-parent-sidebar label {
+  cursor: inherit;
+}
+
+.flex-parent-sidebar div:hover {
+  background-color: #141516;
+  cursor: pointer;
+}
+
+img[title="profile-pic-sidebar"] {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+label[title="profile-name"] {
+  font-weight: bold;
+  color: #a7a29f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.row1 {
+  margin-top: 50px;
+}
+.flex-parent-sidebar div:not(.row1) {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+div:not(.row1) > label {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #a7a29f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.see-more {
+  position: relative;
+  text-transform: capitalize;
+  /* width: fit-content; */
+  color: #a7a29f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  left: 45px;
+  top: 4px;
+}
+
+.see-more::before {
+  position: absolute;
+  content: "^";
+  color: #a7a29f;
+  font-weight: bold;
+
+  left: -35px;
+  top: 1px;
+  transform: scaleX(1.1) rotateX(180deg);
+}
+.see-more::after {
+  content: "";
+  position: absolute;
+  background-color: #a7a29f;
+  font-weight: bold;
+  width: 250px;
+  height: 1px;
+  left: -40px;
+  top: 40px;
+}
+p {
+  color: #a7a29f;
+  margin-left: 20px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group > img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.right-sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  right: 0px;
+  z-index: 0;
+  background-color: transparent;
+}
+
+/* new code is here */
+.friend-list-option-icons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+  /* width: 50%; */
+  margin-right: -70px;
+  color: #010101;
+  position: relative;
+}
+
+.friendlist-dropdown-list {
+  opacity: 0;
+  background-color: #1d1e1f;
+  font-size: small;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-left: -50px;
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: initial;
+}
+.friendlist-dropdown-list:hover {
+  cursor: initial;
+}
+.friendlist-dropdown-list p {
+  margin: 5px;
+}
+
+.option-item:hover + .friendlist-dropdown-list {
+  cursor: initial;
+  opacity: 1;
+}
+
+.friend-list-option-icons div {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.friend-list-option-icons div:hover {
+  transform: scale(1.2);
+}
+
+.friend-list-option-icons div:not(.option-image-dropdown) {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-image-dropdown {
+  height: 100%;
+  position: relative;
+  margin-top: -7px;
+  font-size: 20px;
+}
+
+.options-dropdown-friendlist {
+  display: none;
+  opacity: 0;
+  height: 30px;
+  width: 50%;
+  font-size: small;
+  margin-right: 30px;
+  /* margin-right: -10px; */
+  background-color: #1d1e1f;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  right: 30px;
+}
+.option-image-dropdown:hover + .options-dropdown-friendlist {
+  opacity: 1;
+}
+
+.friend-list-tag-icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  /* 50 margin for top + 18 for position */
+  margin-top: 68px;
+}
+
+.friend-name {
+  font-size: 15px;
+  margin: 0px 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.friend-name:hover {
+  background-color: #141516;
+  cursor: pointer;
+}
